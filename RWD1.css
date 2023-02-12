@@ -3,13 +3,19 @@ body {
 }
 
 .desktop-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom:solid black 2px;
+
     font-size: 40px;
     height: 50px;
     left: 0;
-    text-align: end;
+    text-align: center;
     justify-content: end;
-    background-color: black;
-    color: white;
+    background-color:  #FFCCCC;
+    color: black;
     display: block;
 }
 
@@ -42,11 +48,12 @@ body {
     /*邊框留間距*/
     width: 40%;
  
-    background-color:#ffcccc;
+    background-color:black;
 
 }
 
 .item {
+
     border-right: solid #ACC0D8 2px;/*右線-增加立體*/
     border-bottom: solid #ACC0D8 2px;/*底線-增加立體*/
     border-radius: 5px;
@@ -58,7 +65,7 @@ body {
 }
 
 
-@media(max-width:1200px) {
+@media(max-width:2000px) {
     .list {
         flex-wrap: wrap;
         /*受到螢幕擠壓往下堆疊*/
@@ -70,7 +77,7 @@ body {
 
 }
 
-@media (max-width:500px) {
+@media (max-width:2000px) {
     .item {
         width: 80%;
         justify-self: left;
