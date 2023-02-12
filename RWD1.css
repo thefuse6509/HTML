@@ -1,5 +1,8 @@
+body{
+ 
+}
 .desktop-menu {
-font-size: 40px;
+    font-size: 40px;
     height: 50px;
     left: 0;
     text-align: end;
@@ -11,8 +14,6 @@ font-size: 40px;
 
 .mobile-menu {
     height: 50px;
-    top: 0;
-
     display: flex;
     background-color: black;
     justify-content: end;
@@ -21,18 +22,22 @@ font-size: 40px;
 
 
 .list {
-   
-    
-    justify-content: center;
-    
-    
+
+    opacity: 0.9;
+    position: absolute; /*絕對位置 忽略背景DIV*/
+    padding: 1px;/*邊框留間距*/
+    width: 40%;
+    border-radius: 5px; /*圓弧邊緣*/
+    background-color: rgb(122, 146, 191);
+
 }
 
 .item {
+
     border-radius: 5px;
     padding: 5px;
     flex: none;
-    background-color: burlywood;
+    background-color: rgb(236, 233, 228);
     margin: 5px;
     width: 280px;
 }
@@ -40,7 +45,7 @@ font-size: 40px;
 
 @media(max-width:1200px) {
     .list {
-        flex-wrap: wrap;
+        flex-wrap: wrap; /*受到螢幕擠壓往下堆疊*/
     }
 
     .item {
@@ -51,7 +56,8 @@ font-size: 40px;
 
 @media (max-width:500px) {
     .item {
-        width: 90%;
+        width: 80%;
+        justify-self: left;
     }
 
     .mobile-menu {
@@ -66,9 +72,29 @@ font-size: 40px;
 .p1 {
     width: 50px;
     height: 50px;
-    transition-duration:0.2s; 
+    transition-duration: 0.2s;
 }
-.p1:hover{
+
+.p1:hover {
     width: 52px;
     height: 52px;
+}
+
+.menu-layout {
+    display: flex;
+
+}
+
+.btnSearch {
+    background-color: rgb(230, 224, 217);
+    width: 88%;
+}
+
+.card{
+    border-style:groove;
+    margin-top: 10px ;
+    border-radius: 10px;
+    padding: 15px;
+background-color:bisque;
+
 }
