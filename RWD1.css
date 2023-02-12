@@ -37,18 +37,19 @@ body {
 
 
 .list {
+    border-radius: 5px;
     cursor:pointer;
     margin-top: -10px;
     /*上排留黑所以要間距*/
 
     opacity: 0.9;
-    position: absolute;
+    position:fixed; /*固定再螢幕位置*/
     /*絕對位置 忽略背景DIV*/
-    padding: 1px;
+    padding: 6px;
     /*邊框留間距*/
-    width: 40%;
+    width: 20%;
  
-    background-color:black;
+    background-color:#ffcccc;
 
 }
 
