@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<heml>
+
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <title>RWD1</title>
+        <link rel="stylesheet" type="text/css" href="RWD1.css" />
+    </head>
+
+    <body>
+        <div class="desktop-menu">選單一、選單二、選單三</div>
+        <div class="mobile-menu">
+            <img class="p1" src="menu.png" onclick="menu();" />
+        </div>
+
+        <div id="l1" class="list" style="display: none;">
+            <div id="phone1" class="item">文章1</div>
+            <div id="phone2" class="item">文章2</div>
+            <div id="phone3" class="item">文章3</div>
+
+
+
+        </div>
+
+        <div>
+            <button onclick="getData();">查詢</button>
+        </div>
+
+
+        <script>
+            function menu() {
+                // let list = document.querySelector("#l1");
+                var list = document.getElementById("l1");
+
+                if (list.style.display == "none") {
+                    list.style.display = "block";
+                } else {
+                    list.style.display = "none";
+                }
+
+            }
+            //========= AJAX =========
+            function getData() {
+                fetch("https://thefuse6509.github.io/HTML/Data/data.json").then(function (res) {
+                    return res.json();
+                }).then(function (data) {
+                    var list = document.getElementById("l1");
+                    for (var i = 0; i < data.length; i++) {
+                        let phonename=data[i];
+                        list.innerHTML+="<div class='item'>"+phonename.name+"</div>";
+                    }
+
+                    //console.log(data);
+                });
+
+            }
+
+        </script>
+
+
+    </body>
+
+
+</heml>
