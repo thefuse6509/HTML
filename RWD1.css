@@ -1,4 +1,6 @@
-body {}
+body {
+    background-color:#FFCCCC;
+}
 
 .desktop-menu {
     font-size: 40px;
@@ -19,15 +21,17 @@ body {}
     left: 0;
     /*固定位置*/
 
+    border-bottom:solid black 2px;
     height: 50px;
     display: flex;
-    background-color: black;
+    background-color: #FFCCCC;
     justify-content: end;
     display: none;
 }
 
 
 .list {
+    cursor:pointer;
     margin-top: -10px;
     /*上排留黑所以要間距*/
 
@@ -38,7 +42,7 @@ body {}
     /*邊框留間距*/
     width: 40%;
  
-    background-color:gray;
+    background-color:#ffcccc;
 
 }
 
@@ -104,11 +108,11 @@ body {}
 
 .card {
 
-    border-style: groove;
+    border-style: ridge;
     margin-top: 60px;
     /*上排留黑所以要間距*/
     border-radius: 10px;
     padding: 15px;
-    background-color: bisque;
+    background-color:rgb(43, 44, 44);
 
 }
