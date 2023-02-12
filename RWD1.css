@@ -1,6 +1,5 @@
-body{
- 
-}
+body {}
+
 .desktop-menu {
     font-size: 40px;
     height: 50px;
@@ -13,6 +12,13 @@ body{
 }
 
 .mobile-menu {
+    /*固定位置*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*固定位置*/
+
     height: 50px;
     display: flex;
     background-color: black;
@@ -22,18 +28,23 @@ body{
 
 
 .list {
+    margin-top: -10px;
+    /*上排留黑所以要間距*/
 
     opacity: 0.9;
-    position: absolute; /*絕對位置 忽略背景DIV*/
-    padding: 1px;/*邊框留間距*/
+    position: absolute;
+    /*絕對位置 忽略背景DIV*/
+    padding: 1px;
+    /*邊框留間距*/
     width: 40%;
-    border-radius: 5px; /*圓弧邊緣*/
-    background-color: rgb(122, 146, 191);
+ 
+    background-color:gray;
 
 }
 
 .item {
-
+    border-right: solid #ACC0D8 2px;/*右線-增加立體*/
+    border-bottom: solid #ACC0D8 2px;/*底線-增加立體*/
     border-radius: 5px;
     padding: 5px;
     flex: none;
@@ -45,7 +56,8 @@ body{
 
 @media(max-width:1200px) {
     .list {
-        flex-wrap: wrap; /*受到螢幕擠壓往下堆疊*/
+        flex-wrap: wrap;
+        /*受到螢幕擠壓往下堆疊*/
     }
 
     .item {
@@ -90,11 +102,13 @@ body{
     width: 88%;
 }
 
-.card{
-    border-style:groove;
-    margin-top: 10px ;
+.card {
+
+    border-style: groove;
+    margin-top: 60px;
+    /*上排留黑所以要間距*/
     border-radius: 10px;
     padding: 15px;
-background-color:bisque;
+    background-color: bisque;
 
 }
