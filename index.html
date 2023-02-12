@@ -14,9 +14,9 @@
         <script type="text/javascript" language="JavaScript" src="./langConvert.js"></script> <!--繁簡-->
 
         <div class="desktop-menu">necoxloves</div>
-        <div class="mobile-menu">
-            <div class="menu-layout">
-                <img class="p1" src="menu.png" onclick="menu();" />
+        <div class="mobile-menu" >
+            <div class="menu-layout" >
+                <img class="p1" src="menu.png" onclick="menu();"  />
                 <p style="color: black; position: absolute; left: 43%;font-size: 20px;top: -8px;">necoxloves</p>
 
                 <div style="position:absolute;right: 1%;margin-top: 15px;">
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <div id="l1" class="list" style="display: none;">
+        <div id="l1" class="list" style="display: none;" onmouseleave="closemenu();">
             <!--
             <div style="justify-content: center; display: flex; margin-top: 3px;">
                 <button class="btnSearch" onclick="getData();">查詢更多</button>
@@ -73,6 +73,13 @@
                 } else {
                     list.style.display = "none";
                 }
+
+            }
+            function closemenu() {
+                // let list = document.querySelector("#l1");
+                var list = document.getElementById("l1");
+                    list.style.display = "none";
+
 
             }
             //========= AJAX =========
