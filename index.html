@@ -6,25 +6,41 @@
         <meta charset="UTF-8" />
         <title>RWD1</title>
         <link rel="stylesheet" type="text/css" href="RWD1.css" />
+
     </head>
 
     <body>
+
         <div class="desktop-menu">選單一、選單二、選單三</div>
         <div class="mobile-menu">
-            <img class="p1" src="menu.png" onclick="menu();" />
+            <div class="menu-layout">
+                <img class="p1" src="menu.png" onclick="menu();" />
+                <p style="color: white;position: relative; left: 20%;">學習RWD</p>
+            </div>
         </div>
 
         <div id="l1" class="list" style="display: none;">
+            <div style="justify-content: center; display: flex; margin-top: 3px;">
+                <button class="btnSearch" onclick="getData();">查詢更多</button>
+            </div>
+
             <div id="phone1" class="item">文章1</div>
             <div id="phone2" class="item">文章2</div>
             <div id="phone3" class="item">文章3</div>
-
-
-
         </div>
-
-        <div>
-            <button onclick="getData();">查詢</button>
+  
+        <div class="card">
+            <p style="white-space:pre-line;">西螺早餐ABAO
+                蕃薯:烤肉蛋餅*3+培根蛋餅+阿薩姆紅茶大
+                我: —^
+                BRO:
+                熱狗蛋餅*1
+                惡魔蛋餅*2
+                烤肉炒麵➕辣*1
+                阿薩姆奶茶大杯*1 半糖 溫
+                豆漿大杯*1 半糖 溫
+                Total:340
+            </p>
         </div>
 
 
@@ -47,8 +63,8 @@
                 }).then(function (data) {
                     var list = document.getElementById("l1");
                     for (var i = 0; i < data.length; i++) {
-                        let phonename=data[i];
-                        list.innerHTML+="<div class='item'>"+phonename.name+"</div>";
+                        let phonename = data[i];
+                        list.innerHTML += "<div class='item'>" + phonename.name + "</div>";
                     }
 
                     //console.log(data);
