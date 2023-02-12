@@ -1,0 +1,17 @@
+[
+  {
+    "name":"iphoneXR",
+    "price":28500,
+    "release":"2018"
+  },
+  {
+    "name":"iphoneXS",
+    "price":35000,
+    "release":"2018"
+  },
+  {
+    "name":"iphone13",
+    "price":25500,
+    "release":"2021"
+  }
+]
