@@ -26,25 +26,39 @@ body {
     top: 0;
     left: 0;
     /*固定位置*/
+    height: 50px;
 
     border-bottom: solid black 2px;
-    height: 50px;
+
     display: flex;
     background-color: #FFCCCC;
     justify-content: end;
     display: none;
 }
 
+.menu-layout {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*固定位置*/
+    height: 50px;
+
+    display: flex;
+    height: 50px;
+
+}
+
 
 .list {
     border-style: solid;
     border-radius: 5px;
-margin: 10px;
+    margin: 10px;
     margin-top: 42px;
     /*上排留黑所以要間距*/
 
     opacity: 0.9;
-    position:fixed;
+    position: fixed;
     /*固定再螢幕位置*/
     /*絕對位置 忽略背景DIV*/
     padding: 6px;
@@ -52,12 +66,14 @@ margin: 10px;
     width: auto;
 
     background-color: #ffcccc;
-    
-    height:50%;
-    overflow-y:auto;
+
+    height: 50%;
+    overflow-y: auto;
 
 }
-.list::-webkit-scrollbar{/*滾動條大小*/
+
+.list::-webkit-scrollbar {
+    /*滾動條大小*/
     width: 4px;
 }
 
@@ -74,7 +90,7 @@ margin: 10px;
     flex: none;
     background-color: rgb(236, 233, 228);
     margin: 5px;
-   
+
 }
 
 
@@ -92,7 +108,7 @@ margin: 10px;
 
 @media (max-width:2000px) {
     .item {
-       
+
         justify-self: center;
     }
 
@@ -116,14 +132,9 @@ margin: 10px;
     height: 52px;
 }
 
-.menu-layout {
-    display: flex;
-
-}
-
 .btnSearch {
     font-size: 15px;
-    border-style:dashed ;
+    border-style: dashed;
     border-radius: 5px;
     background-color: rgb(237, 202, 223);
     width: auto;
@@ -137,6 +148,7 @@ margin: 10px;
     /*底線-增加立體*/
     /*border-style: ridge;*/
     margin-top: 50px;
+    
 
     /*上排留黑所以要間距*/
     border-radius: 8px;
