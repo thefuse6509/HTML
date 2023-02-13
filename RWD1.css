@@ -37,6 +37,7 @@ body {
 
 
 .list {
+    border-style: solid;
     border-radius: 5px;
 
     margin-top: 40px;
@@ -115,6 +116,7 @@ body {
 }
 
 .btnSearch {
+    font-size: 15px;
     border-style:dashed ;
     border-radius: 5px;
     background-color: rgb(237, 202, 223);
