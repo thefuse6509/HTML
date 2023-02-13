@@ -14,10 +14,30 @@
         <script type="text/javascript" language="JavaScript" src="./langConvert.js"></script> <!--繁簡-->
 
         <div class="desktop-menu">necoxloves</div>
+
+
+
         <div class="mobile-menu">
+
+
+            <div style="position: relative;top:-15px">
+                <!--
+                    <p style="color: black; position: absolute; left: 43%;font-size: 20px;top: -8px;font-weight: bold;">
+                    necoxloves</p>
+                -->
+                <p style="text-align: center;font-size: 25px;font-weight: bold;">
+                    necoxloves</p>
+
+            </div>
+
             <div class="menu-layout">
-                <img class="p1" src="menu.png" onclick="menu();" />
-                <p style="color: black; position: absolute; left: 40%;font-size: 20px;top: -8px;">necoxloves</p>
+
+                <img class="p1" src="menu.png" onclick="menu();">
+
+
+
+
+
 
                 <div style="position:absolute;right: 1%;margin-top: 15px;">
                     <button type="button" class="btnSearch" onclick=javascript:TSC("big5")>繁體</button>
@@ -108,7 +128,7 @@
                 <div class="item" onclick="location.href='http://www.google.com';">03</div>
                 <div class="item" onclick="location.href='http://www.google.com';">04 (END)</div>
             </div>
-             <!----------------------------------------------------------------------------------------------------->
+            <!----------------------------------------------------------------------------------------------------->
             <div class="item" style="background-color:black;color: white;text-align: center;">清水 短篇</div>
             <div style="display:flex;font-size: 10px; flex-wrap: wrap;">
                 <div class="item" onclick="location.href='http://www.google.com';">破曉</div>
@@ -132,13 +152,20 @@
 
         </div>
 
+        <div id="front_page0" style=" width: 93%; height: 90%; padding: 15px;display: flex;justify-content: center;">
+            <img style="border-style: solid ; margin-top: 40px; border-radius: 10px; max-width: 100%; max-height: 100%;" src="p2.jpeg">
         </div>
 
 
-        <div id="front_page" style="padding: 10px;display: block;">
-            <div class="card">
-                <h2 style="white-space:pre-line; color: rgb(212, 212, 212);font-size: 30px;">丹雲同人文(by NeCo)
+
+
+        <div id="front_page1" style="padding: 10px;display: block;">
+            <div class="card" style="margin-top: -10px;">
+
+                <h2 style="white-space:pre-line; color: rgb(212, 212, 212);font-size: 30px;line-height: 30px;">丹雲同人文(by NeCo)
                 </h2>
+
+                <hr>
                 <p style="white-space:pre-line; color: rgb(212, 212, 212);">
                     嚴禁未經同意隨意轉載，本連結只在作者的LOFTER及PIXNET發布
                     ☁︎丹尼爾x河成雲
@@ -163,6 +190,10 @@
                 </p>
             </div>
         </div>
+
+
+
+        <button class="btnSearch" onclick="getData();" style="width: 100%;">測試</button>
 
         <div id="article" style="padding: 10px;display: none;">
             <div class="card">
@@ -212,9 +243,11 @@
             }
 
             function homePage() {
-                var home = document.getElementById("front_page");
+                var home0 = document.getElementById("front_page0");
+                var home1 = document.getElementById("front_page1");
                 var card = document.getElementById("article");
-                home.style.display = "block";
+                home0.style.display = "flex";
+                home1.style.display = "block";
                 card.style.display = "none";
             }
 
@@ -243,15 +276,17 @@
                     for (var i = 0; i < data.length; i++) {
                         let phonename = data[i];
                         list.innerHTML += "<div class='item'>" + phonename.name + "</div>";
+
                     }
 
-                    //console.log(data);
+                    console.log(data);
                 });
 
             }
 
         </script>
         <script> convertWholePageAtEnd(); </script> <!--繁簡-->
+
     </body>
 
 
