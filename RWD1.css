@@ -1,5 +1,5 @@
 body {
-    background-color:#FFCCCC;
+    background-color: #FFCCCC;
 }
 
 .desktop-menu {
@@ -7,14 +7,14 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    border-bottom:solid black 2px;
+    border-bottom: solid black 2px;
 
     font-size: 40px;
     height: 50px;
     left: 0;
     text-align: center;
     justify-content: end;
-    background-color:  #FFCCCC;
+    background-color: #FFCCCC;
     color: black;
     display: block;
 }
@@ -27,7 +27,7 @@ body {
     left: 0;
     /*固定位置*/
 
-    border-bottom:solid black 2px;
+    border-bottom: solid black 2px;
     height: 50px;
     display: flex;
     background-color: #FFCCCC;
@@ -38,25 +38,29 @@ body {
 
 .list {
     border-radius: 5px;
-    cursor:pointer;
-    margin-top: -10px;
+
+    margin-top: 40px;
     /*上排留黑所以要間距*/
 
     opacity: 0.9;
-    position:fixed; /*固定再螢幕位置*/
+    position: fixed;
+    /*固定再螢幕位置*/
     /*絕對位置 忽略背景DIV*/
     padding: 6px;
     /*邊框留間距*/
-    width: 20%;
- 
-    background-color:#ffcccc;
+    width: 25%;
+
+    background-color: #ffcccc;
 
 }
 
 .item {
+    border-right: solid #ACC0D8 2px;
+    /*右線-增加立體*/
+    border-bottom: solid #ACC0D8 2px;
+    /*底線-增加立體*/
 
-    border-right: solid #ACC0D8 2px;/*右線-增加立體*/
-    border-bottom: solid #ACC0D8 2px;/*底線-增加立體*/
+    cursor: pointer;
     border-radius: 5px;
     padding: 5px;
     flex: none;
@@ -115,12 +119,15 @@ body {
 }
 
 .card {
-
-    border-style: ridge;
+    border-right: solid white 2px;
+    /*右線-增加立體*/
+    border-bottom: solid white 2px;
+    /*底線-增加立體*/
+    /*border-style: ridge;*/
     margin-top: 60px;
     /*上排留黑所以要間距*/
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 15px;
-    background-color:rgb(43, 44, 44);
+    background-color: rgb(43, 44, 44);
 
 }
