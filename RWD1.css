@@ -44,7 +44,7 @@ body {
     /*上排留黑所以要間距*/
 
     opacity: 0.9;
-    position: fixed;
+    position:fixed;
     /*固定再螢幕位置*/
     /*絕對位置 忽略背景DIV*/
     padding: 6px;
@@ -53,8 +53,14 @@ body {
 
     background-color: #ffcccc;
     
+    height:300px;
+    overflow-y:auto;
 
 }
+.list::-webkit-scrollbar{/*滾動條大小*/
+    width: 4px;
+}
+
 
 .item {
     border-right: solid #ACC0D8 2px;
