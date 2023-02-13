@@ -39,8 +39,8 @@ body {
 .list {
     border-style: solid;
     border-radius: 5px;
-
-    margin-top: 40px;
+margin: 10px;
+    margin-top: 42px;
     /*上排留黑所以要間距*/
 
     opacity: 0.9;
@@ -127,6 +127,7 @@ body {
     border-radius: 5px;
     background-color: rgb(237, 202, 223);
     width: auto;
+    color: black;
 }
 
 .card {
