@@ -48,9 +48,10 @@ body {
     /*絕對位置 忽略背景DIV*/
     padding: 6px;
     /*邊框留間距*/
-    width: 25%;
+    width: auto;
 
     background-color: #ffcccc;
+    
 
 }
 
@@ -66,8 +67,10 @@ body {
     flex: none;
     background-color: rgb(236, 233, 228);
     margin: 5px;
-    width: 280px;
+   
 }
+
+
 
 
 @media(max-width:2000px) {
@@ -76,16 +79,14 @@ body {
         /*受到螢幕擠壓往下堆疊*/
     }
 
-    .item {
-        width: 45%;
-    }
+
 
 }
 
 @media (max-width:2000px) {
     .item {
-        width: 80%;
-        justify-self: left;
+       
+        justify-self: center;
     }
 
     .mobile-menu {
@@ -114,17 +115,20 @@ body {
 }
 
 .btnSearch {
-    background-color: rgb(230, 224, 217);
-    width: 88%;
+    border-style:dashed ;
+    border-radius: 5px;
+    background-color: rgb(237, 202, 223);
+    width: auto;
 }
 
 .card {
-    border-right: solid white 2px;
+    border-right: solid rgb(167, 164, 164) 2px;
     /*右線-增加立體*/
-    border-bottom: solid white 2px;
+    border-bottom: solid rgb(167, 164, 164) 2px;
     /*底線-增加立體*/
     /*border-style: ridge;*/
-    margin-top: 60px;
+    margin-top: 50px;
+
     /*上排留黑所以要間距*/
     border-radius: 8px;
     padding: 15px;
